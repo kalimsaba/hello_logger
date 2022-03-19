@@ -11,7 +11,7 @@ public class App {
         // must set before the Logger
         // loads logging.properties 
         try {
-            //If the program cannot find this file, right-click on the resources file, and get the relative path
+            //If the program cannot find the file, right-click on the .properties file, and get the relative path
             LogManager.getLogManager().readConfiguration(new FileInputStream("resources/logging.properties"));
         } catch (SecurityException | IOException e1) {
             //No logger, yet. Printing to console
